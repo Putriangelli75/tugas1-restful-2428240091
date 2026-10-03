@@ -1,0 +1,5 @@
+$kind: http-request
+name: data-plans
+url: http://localhost:3000/data-plans
+method: GET
+order: 1685
