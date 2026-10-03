@@ -55,6 +55,32 @@
 	  res.json(data);
 	});
 	
+	// POST /data-plans -> tambah data baru
+	// Body JSON: { "namaPaket": "Internet Bulanan 50GB", "operator": "Indosat", "kuotaGb": 50, "masaAktifHari": 30, "harga": 120000 }
+	app.post('/data-plans', (req, res) => {
+	  const { namaPaket, operator, kuotaGb, masaAktifHari, harga } = req.body;
+	
+
+	  // validasi : field wajib kosong -> 400
+	  if (!namaPaket || !operator || !kuotaGb || !masaAktifHari || !harga) {
+	    return res.status(400).json({ 
+			"status": "error",
+			"message": 'namaPaket, operator, kuotaGb, masaAktifHari, dan harga wajib diisi',
+			"data": null,
+		});
+	  }
+	
+	  const baru = { id: nextId++, namaPaket, operator, kuotaGb, masaAktifHari, harga };
+	  dataplans.push(baru);
+
+	  //berhasil -> 201 + data yang baru dibuat
+	  res.status(201).json({
+		"status": "success",
+		"message": "Data berhasil ditambahkan",
+		"data": baru,
+	  });
+	});
+	
 	
 	
 	app.listen(PORT, () => {
