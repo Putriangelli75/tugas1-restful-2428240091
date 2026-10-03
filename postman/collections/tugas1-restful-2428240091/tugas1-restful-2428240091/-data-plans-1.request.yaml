@@ -1,5 +1,5 @@
 $kind: http-request
-name: data-plans
+name: /data-plans
 url: http://localhost:3000/data-plans
 method: POST
 body:

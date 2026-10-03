@@ -1,5 +1,5 @@
 $kind: http-request
-name: data-plans?operator=Nusanet
+name: /data-plans?operator=Nusanet
 url: http://localhost:3000/data-plans?operator=Nusanet
 method: GET
 queryParams:
