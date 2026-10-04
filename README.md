@@ -34,6 +34,6 @@ Daftar endpoint :
 | 10 | DELETE | `/data-plans/99` | — | 404 | … | … |
 
 
-Link repository github : GitHub - Putriangelli75/tugas1-restful-2428240091 · GitHub
+Link repository github : https://github.com/Putriangelli75/tugas1-restful-2428240091
 
 Link deploy vercel : https://tugas1-restful-2428240091.vercel.app/
