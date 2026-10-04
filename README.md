@@ -1,5 +1,7 @@
 Nama : Putri Angel Li
+
 NPM : 2428240091
+
 Nomor Topik : 25
 
 Cara menjalankan lokal : 
@@ -14,7 +16,7 @@ Cara menjalankan lokal :
   "dev": "nodemon app.js"
 }
 8. Jalankan npm run dev
-
+9. Buka http://localhost:3000
 
 Daftar endpoint :
 | No | Method | Endpoint | Data request | Status diharapkan | Status hasil | Keterangan |
@@ -31,5 +33,5 @@ Daftar endpoint :
 | 10 | DELETE | `/data-plans/99` | — | 404 | … | … |
 
 
-Link repository github :
+Link repository github : GitHub - Putriangelli75/tugas1-restful-2428240091 · GitHub
 Link deploy vercel : https://tugas1-restful-2428240091.vercel.app/
