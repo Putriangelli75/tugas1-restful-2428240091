@@ -10,7 +10,8 @@ Cara menjalankan lokal :
 3. Kemudian ketik npm init -y dan npm install express
 4. Buka folder tugas1-restful-2428240091 di visual studio code
 5. Kemudian buka terminal dan ketik npm install --save-dev nodemon
-6. Tambahkan pada packages.json :
+6. Ubah main pada packages.json menjadi app.js dan buat file baru dengan nama app.js
+7. Tambahkan pada packages.json :
    "scripts": {
    "start": "node app.js",
   "dev": "nodemon app.js"
