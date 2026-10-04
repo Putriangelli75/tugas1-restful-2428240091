@@ -1,7 +1,21 @@
 Nama : Putri Angel Li
 NPM : 2428240091
 Nomor Topik : 25
-Cara menjalankan lokal :
+
+Cara menjalankan lokal : 
+1. Buka command prompt, kemudian ketik D:
+2. Lalu ketik mkdir tugas1-restful-2428240091, kemudian cd tugas1-restful-2428240091
+3. Kemudian ketik npm init -y dan npm install express
+4. Buka folder tugas1-restful-2428240091 di visual studio code
+5. Kemudian buka terminal dan ketik npm install --save-dev nodemon
+6. Tambahkan pada packages.json :
+   "scripts": {
+   "start": "node app.js",
+  "dev": "nodemon app.js"
+}
+8. Jalankan npm run dev
+
+
 Daftar endpoint :
 | No | Method | Endpoint | Data request | Status diharapkan | Status hasil | Keterangan |
 |---:|---|---|---|---:|---:|---|
