@@ -18,4 +18,4 @@ Daftar endpoint :
 
 
 Link repository github :
-Link deploy vercel :
+Link deploy vercel : https://tugas1-restful-2428240091.vercel.app/
