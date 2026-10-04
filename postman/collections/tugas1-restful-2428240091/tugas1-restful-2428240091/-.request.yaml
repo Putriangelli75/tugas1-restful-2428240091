@@ -1,5 +1,0 @@
-$kind: http-request
-name: /
-url: https://tugas1-restful-2428240091.vercel.app
-method: GET
-order: 1000
