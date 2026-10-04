@@ -1,0 +1,8 @@
+$kind: http-request
+name: /data-plans/1
+url: https://tugas1-restful-2428240091.vercel.app/data-plans/1
+method: PUT
+body:
+  type: json
+  content: "{ \"namaPaket\": \"Internet Bulanan 100GB\", \"operator\": \"Smartfren\", \"kuotaGb\": 50, \"masaAktifHari\": 30, \"harga\": 150000 }\r\n"
+order: 11000

@@ -1,0 +1,8 @@
+$kind: http-request
+name: /data-plans (Field kosong)
+url: https://tugas1-restful-2428240091.vercel.app/data-plans
+method: POST
+body:
+  type: json
+  content: "{}"
+order: 7000

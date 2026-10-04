@@ -1,0 +1,5 @@
+$kind: http-request
+name: /data-plans/99
+url: https://tugas1-restful-2428240091.vercel.app/data-plans/99
+method: DELETE
+order: 9094

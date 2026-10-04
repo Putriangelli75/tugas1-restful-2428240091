@@ -1,0 +1,9 @@
+$kind: http-request
+name: /data-plans/99
+url: https://tugas1-restful-2428240091.vercel.app/data-plans/99
+method: PUT
+body:
+  type: json
+  content: '{"namaPaket": "Internet Bulanan 50GB", "operator": "Indosat",
+    "kuotaGb": 50, "masaAktifHari": 30, "harga": 120000 }'
+order: 8000

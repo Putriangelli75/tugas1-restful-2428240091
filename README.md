@@ -28,10 +28,10 @@ Daftar endpoint :
 | 4 | GET | `/data-plans?operator=Telkomsel` | — | 200 | 200 | Sesuai |
 | 5 | POST | `/data-plans` | body lengkap | 201 | 201 | Sesuai |
 | 6 | POST | `/data-plans` | field wajib kosong | 400 | 400 | Sesuai |
-| 7 | PUT | `/data-plans/1` | body lengkap | 200 | … | … |
-| 8 | PUT | `/data-plans/99` | body lengkap | 404 | … | … |
-| 9 | DELETE | `/data-plans/1` | — | 200 | … | … |
-| 10 | DELETE | `/data-plans/99` | — | 404 | … | … |
+| 7 | PUT | `/data-plans/1` | body lengkap | 200 | 200 | Sesuai |
+| 8 | PUT | `/data-plans/99` | body lengkap | 404 | 404 | Sesuai |
+| 9 | DELETE | `/data-plans/1` | — | 200 | 200 | Sesuai |
+| 10 | DELETE | `/data-plans/99` | — | 404 | 404 | Sesuai |
 
 
 Link repository github : https://github.com/Putriangelli75/tugas1-restful-2428240091

@@ -82,6 +82,7 @@ app.post('/data-plans', (req, res) => {
 });
 
 // PUT /data-plans/4 -> ubah data
+// Body JSON: { "namaPaket": "Internet Bulanan 100GB", "operator": "Smartfren", "kuotaGb": 50, "masaAktifHari": 30, "harga": 150000 }
 app.put('/data-plans/:id', (req, res) => {
 	const id = parseInt(req.params.id);
 	const index = dataplans.findIndex((d) => d.id === id);
