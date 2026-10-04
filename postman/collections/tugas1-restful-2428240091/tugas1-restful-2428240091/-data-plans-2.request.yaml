@@ -1,8 +1,5 @@
 $kind: http-request
 name: /data-plans
-url: http://localhost:3000/data-plans
-method: POST
-body:
-  type: json
-  content: "\r\n"
-order: 5000
+url: https://tugas1-restful-2428240091.vercel.app/data-plans
+method: GET
+order: 1682
