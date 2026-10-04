@@ -2,7 +2,15 @@ Nama : Putri Angel Li
 
 NPM : 2428240091
 
+Kelas : SI5B
+
+Nama Topik : Telekomunnikasi
+
 Nomor Topik : 25
+
+Link repository github : https://github.com/Putriangelli75/tugas1-restful-2428240091
+
+Link deploy vercel : https://tugas1-restful-2428240091.vercel.app/
 
 Cara menjalankan lokal : 
 1. Buka command prompt, kemudian ketik D:
@@ -34,6 +42,4 @@ Daftar endpoint :
 | 10 | DELETE | `/data-plans/99` | — | 404 | 404 | Sesuai |
 
 
-Link repository github : https://github.com/Putriangelli75/tugas1-restful-2428240091
 
-Link deploy vercel : https://tugas1-restful-2428240091.vercel.app/
