@@ -40,6 +40,7 @@ Daftar endpoint :
 | 8 | PUT | `/data-plans/99` | body lengkap | 404 | 404 | Sesuai |
 | 9 | DELETE | `/data-plans/1` | — | 200 | 200 | Sesuai |
 | 10 | DELETE | `/data-plans/99` | — | 404 | 404 | Sesuai |
+| 11 | GET | `/data` | — | 404 | 404 | Sesuai |
 
 Field dan Tipe Data :
 | Field           | Tipe Data | Wajib di isi|
