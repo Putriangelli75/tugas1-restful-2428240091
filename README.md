@@ -41,5 +41,14 @@ Daftar endpoint :
 | 9 | DELETE | `/data-plans/1` | — | 200 | 200 | Sesuai |
 | 10 | DELETE | `/data-plans/99` | — | 404 | 404 | Sesuai |
 
+Field dan Tipe Data :
+| Field           | Tipe Data | Wajib |
+| --------------- | --------- | ----- |
+| `namaPaket`     | string    | *     |
+| `operator`      | string    | *     |
+| `kuotaGb`       | number    | *     |
+| `masaAktifHari` | number    | *     |
+| `harga`         | number    | *     |
+
 
 
