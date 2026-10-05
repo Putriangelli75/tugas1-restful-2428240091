@@ -2,4 +2,4 @@ $kind: http-request
 name: /data-plans/1
 url: https://tugas1-restful-2428240091.vercel.app/data-plans/1
 method: GET
-order: 3000
+order: 4000

@@ -13,13 +13,6 @@ let dataplans = [
 ];
 let nextId = 4;
 
-// Route yang tidak terdaftar
-app.use((req, res) => {
-    res.status(404).json({
-        message: "Endpoint tidak ditemukan"
-    });
-});
-
 // GET / -> memastikan server berjalan
 app.get('/', (req, res) => {
 	res.json({
@@ -130,6 +123,13 @@ app.delete('/data-plans/:id', (req, res) => {
 		"message": `Data data-plans dengan id ${id} berhasil dihapus`,
 		"data": null
 	});
+});
+
+// Route yang tidak terdaftar
+app.use((req, res) => {
+    res.status(404).json({
+        message: "Endpoint tidak ditemukan"
+    });
 });
 
 if (process.env.NODE_ENV !== 'production') {
