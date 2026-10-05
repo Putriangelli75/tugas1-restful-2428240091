@@ -1,5 +1,5 @@
 $kind: http-request
 name: /data (Endpoint Tidak Ditemukan)
-url: https://tugas1-restful-2428240091.vercel.app/data-plans
+url: https://tugas1-restful-2428240091.vercel.app/data
 method: GET
 order: 72
