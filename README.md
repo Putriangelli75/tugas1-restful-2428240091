@@ -4,7 +4,7 @@ NPM : 2428240091
 
 Kelas : SI5B
 
-Nama Topik : Telekomunnikasi
+Nama Topik : Telekomunikasi: Paket Data
 
 Nomor Topik : 25
 
