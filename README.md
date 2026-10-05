@@ -42,7 +42,7 @@ Daftar endpoint :
 | 10 | DELETE | `/data-plans/99` | — | 404 | 404 | Sesuai |
 
 Field dan Tipe Data :
-| Field           | Tipe Data | Wajib |
+| Field           | Tipe Data | Wajib di isi|
 | --------------- | --------- | ----- |
 | `namaPaket`     | string    | *     |
 | `operator`      | string    | *     |
