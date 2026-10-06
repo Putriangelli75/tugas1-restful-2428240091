@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 		endpoints: [
 			"GET /data-plans",
 			"GET /data-plans/:id",
-			"GET /data-plans?operator=Telkomsel",
+			"GET /data-plans?operator=Nusanet",
 			"POST /data-plans",
 			"PUT /data-plans/:id",
 			"DELETE /data-plans/:id"
