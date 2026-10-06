@@ -1,7 +1,7 @@
 $kind: http-request
 name: /data-plans?operator=Nusanet
-url: https://tugas1-restful-2428240091.vercel.app/data-plans?operator=Telkomsel
+url: https://tugas1-restful-2428240091.vercel.app/data-plans?operator=Nusanet
 method: GET
 queryParams:
-  operator: Telkomsel
+  operator: Nusanet
 order: 6000
