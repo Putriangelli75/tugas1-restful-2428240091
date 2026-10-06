@@ -33,7 +33,7 @@ Daftar endpoint :
 | 1 | GET | `/data-plans` | — | 200 | 200 | Sesuai |
 | 2 | GET | `/data-plans/1` | — | 200 | 200 | Sesuai |
 | 3 | GET | `/data-plans/99` | — | 404 | 404 | Sesuai |
-| 4 | GET | `/data-plans?operator=Telkomsel` | — | 200 | 200 | Sesuai |
+| 4 | GET | `/data-plans?operator=Nusanet` | — | 200 | 200 | Sesuai |
 | 5 | POST | `/data-plans` | body lengkap | 201 | 201 | Sesuai |
 | 6 | POST | `/data-plans` | field wajib kosong | 400 | 400 | Sesuai |
 | 7 | PUT | `/data-plans/1` | body lengkap | 200 | 200 | Sesuai |
