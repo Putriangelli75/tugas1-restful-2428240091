@@ -8,13 +8,11 @@ Nama Topik : Telekomunikasi: Paket Data
 
 Nomor Topik : 25
 
-Link repository github : https://github.com/Putriangelli75/tugas1-restful-2428240091
-
-Link deploy vercel : https://tugas1-restful-2428240091.vercel.app/
+Link repository github : https://github.com/Putriangelli75/SI5B_Kuis1_Putri_Angel_Li
 
 Cara menjalankan lokal : 
 1. Buka command prompt, kemudian ketik D:
-2. Lalu ketik mkdir tugas1-restful-2428240091, kemudian cd tugas1-restful-2428240091
+2. Lalu ketik mkdir tugas1-restful-2428240091, kemudian cd SI5B_Kuis1_Putri_Angel_Li
 3. Kemudian ketik npm init -y dan npm install express
 4. Buka folder tugas1-restful-2428240091 di visual studio code
 5. Kemudian buka terminal dan ketik npm install --save-dev nodemon
