@@ -1,0 +1,37 @@
+$kind: http-request
+url: "{{base_url}}/data-plans"
+method: POST
+headers:
+  x-api-key: "{{api_key}}"
+body:
+  type: json
+  content: '{ "namaPaket": "Internet Bulanan 50GB", "operator": "Indosat", "kuotaGb": 50, "masaAktifHari": 30, "harga": 120000 }'
+scripts:
+  - type: afterResponse
+    code: "pm.test('Status code adalah 201', function () {\r
+
+      \  pm.response.to.have.status(201);\r
+
+      });\r
+
+      \r
+
+      pm.test('Data baru memiliki id dan namaPaket sesuai kiriman', function () {\r
+
+      \  const jsonData = pm.response.json();\r
+
+      \  pm.expect(jsonData).to.have.property('id');\r
+
+      \  pm.expect(jsonData.namaPaket).to.eql('Internet Bulanan 50GB');\r
+
+      });\r
+
+      \r
+
+      if (pm.response.code === 201) {\r
+
+      \  pm.environment.set('dataplansId', pm.response.json().id);\r
+
+      }"
+    language: text/javascript
+order: 2219

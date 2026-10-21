@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{base_url}}/data-plans/{{dataplansId}}"
+method: GET
+scripts:
+  - type: afterResponse
+    code: "pm.test('Status code adalah 200', function () {\r
+
+      \  pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      pm.test('Data yang diambil adalah Internet Bulanan 50GB', function () {\r
+
+      \  const jsonData = pm.response.json();\r
+
+      \  pm.expect(jsonData.id).to.eql(Number(pm.environment.get('dataplansId')));\r
+
+      \  pm.expect(jsonData.namaPaket).to.eql('Internet Bulanan 50GB');\r
+
+      });"
+    language: text/javascript
+order: 6045

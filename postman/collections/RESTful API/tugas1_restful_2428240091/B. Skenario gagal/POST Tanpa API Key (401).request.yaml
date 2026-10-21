@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{base_url}}/data-plans"
+method: POST
+body:
+  type: json
+  content: '{ "namaPaket": "Internet Harian 5GB", "operator": "Indosat" }'
+scripts:
+  - type: afterResponse
+    code: "pm.test('Status code adalah 401', function () {\r
+
+      \  pm.response.to.have.status(401);\r
+
+      });\r
+
+      \r
+
+      pm.test('Pesan error: API key tidak valid', function () {\r
+
+      \  pm.expect(pm.response.json().message).to.eql('API key tidak valid');\r
+
+      });"
+    language: text/javascript
+order: 4000
