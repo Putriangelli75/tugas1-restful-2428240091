@@ -1,37 +1,19 @@
-let dataplans = [
-	{ id: 1, namaPaket: 'Internet Bulanan 25GB', operator: 'Nusanet', kuotaGb: 25, masaAktifHari: 30, harga: 85000 },
-	{ id: 2, namaPaket: 'Internet Bulanan 10GB', operator: 'Telkomsel', kuotaGb: 10, masaAktifHari: 30, harga: 50000 },
-	{ id: 3, namaPaket: 'Internet Bulanan 5GB', operator: 'Axis', kuotaGb: 5, masaAktifHari: 30, harga: 30000 }
-];
-let nextId = 4;
+const mongoose = require('mongoose');
 
-function getAll(operator) {
-  if (operator) return dataplans.filter((p) => p.operator === operator);
-  return dataplans;
-}
+const alamatSchema = new mongoose.Schema({
+  nama: String,
+  jalan: String,
+}, { _id: false });
 
-function getById(id) {
-  return dataplans.find((p) => p.id === id);
-}
+const dataplansSchema = new mongoose.Schema({
+  namaPaket: { type: String, required: [true, 'nama paket wajib diisi'], trim: true },
+  operator: { type: String, required: [true, 'operator wajib diisi'], trim: true },
+  kuotaGb: { type: Number, required: [true, 'kuota GB wajib diisi'], min: 0 },
+  masaAktifHari: { type: Number, required: [true, 'masa aktif hari wajib diisi'], min: 0 },
+  harga: { type: Number, required: [true, 'harga wajib diisi'], min: 0 },
+  alamat: alamatSchema,
+  operatorId: { type: mongoose.Schema.Types.ObjectId, ref: 'Operator', required: true },
+  createdAt: { type: Date, default: Date.now },
+});
 
-function create(data) {
-  const baru = { id: nextId++, ...data };
-  dataplans.push(baru);
-  return baru;
-}
-
-function update(id, data) {
-  const index = dataplans.findIndex((p) => p.id === id);
-  if (index === -1) return null;
-  dataplans[index] = { ...dataplans[index], ...data, id };
-  return dataplans[index];
-}
-
-function remove(id) {
-  const index = dataplans.findIndex((p) => p.id === id);
-  if (index === -1) return false;
-  dataplans.splice(index, 1);
-  return true;
-}
-
-module.exports = { getAll, getById, create, update, remove };
+module.exports = mongoose.model('Dataplans', dataplansSchema);
