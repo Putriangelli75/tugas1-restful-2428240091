@@ -8,7 +8,7 @@ const logger = require('./middlewares/logger');
 const { notFoundHandler, errorHandler } = require('./middlewares/errorHandler');
 
 const dataplansRoutes = require('./routes/dataplansRoutes');
-const operatorRoutes = require('./routes/operatorRoutes');
+const cabangRoutes = require('./routes/cabangRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 
 // ---------- Route per modul ----------
 app.use('/data-plans', dataplansRoutes);
-app.use('/operators', operatorRoutes);
+app.use('/cabangs', cabangRoutes);
 
 // ---------- Handler 404 dan error handler (paling bawah) ----------
 app.use(notFoundHandler);

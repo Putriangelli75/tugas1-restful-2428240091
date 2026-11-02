@@ -1,4 +1,4 @@
-const Operator = require('../models/operatorModel');
+const Operator = require('../models/cabangModel');
 
 exports.create = async (req, res) => {
   try {

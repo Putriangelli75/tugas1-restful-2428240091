@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const alamatSchema = new mongoose.Schema({
-  nama: String,
-  jalan: String,
+  kodePos: String,
+  kota: String,
 }, { _id: false });
 
 const dataplansSchema = new mongoose.Schema({
@@ -10,9 +10,9 @@ const dataplansSchema = new mongoose.Schema({
   operator: { type: String, required: [true, 'operator wajib diisi'], trim: true },
   kuotaGb: { type: Number, required: [true, 'kuota GB wajib diisi'], min: 0 },
   masaAktifHari: { type: Number, required: [true, 'masa aktif hari wajib diisi'], min: 0 },
-  harga: { type: Number, required: [true, 'harga wajib diisi'], min: 0 },
+  harga: { type: Number, required: [true, 'harga wajib diisi'], unique: true, min: 0 },
   alamat: alamatSchema,
-  operatorId: { type: mongoose.Schema.Types.ObjectId, ref: 'Operator', required: true },
+  cabangId: { type: mongoose.Schema.Types.ObjectId, ref: 'Cabang' },
   createdAt: { type: Date, default: Date.now },
 });
 
